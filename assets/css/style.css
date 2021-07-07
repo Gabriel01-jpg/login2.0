@@ -39,7 +39,8 @@ form h2 {
     position: fixed;
     height: 100vh;
     z-index: -1;
-    background-color: var(--background-color);
+    background-color: #222;
+    /* background-color: var(--background-color); */
     width: 100vw;
 }
 
@@ -182,3 +183,4 @@ a:hover{
 .btn:hover {
     background: var(--base-color-second);
 }
+

@@ -4,45 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
 <body>
+    <img class="background" src="./assets/bg-desktop.svg" alt="background ">
     <div class="container">
         <div class="content">
-            <img class="avatar" src="/fonts/avatar.svg" alt="">
+            <img class="avatar" src="./assets/fonts/avatar.svg" alt="">
             <div class="login-container">
-                <form action="">
-                    <img src="avatar.svg" alt="">
+                <form action="" name="signIn">
                     <h2>Bem-vindo</h2>
                     <div class="input-div one">
                             <div class="icon">
                                 <i class="icon-avatar-icon"></i>
                             </div>
-                            <div class="input-box">
+                            <div class="input-box toggle">
                                 <h5>Login</h5>
-                                <input class="input" type="text">
+                                <input class="input login" type="text" name="login">
                             </div>
                     </div>
                     <div class="input-div two">
-                            <div class="icon">
+                        <div class="icon">
                                 <i class="icon-padlock-icon"></i>
                             </div>
-                            <div class="input-box">
+                            <div class="input-box toggle">
                                 <h5>Password</h5>
-                                <input class="input" type="password">
+                                <input class="input password" type="password" name="password">
                             </div>
                     </div>
                     <a href="#">Esqueceu sua senha?</a>
-                    <button class="btn" onclick="" type="submit">Sign-in</button>
+                    <button class="btn" onclick="getValueInput()" type="button">Sign-in</button>
                 </form>
             </div>
         </div>
     </div>
-    
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

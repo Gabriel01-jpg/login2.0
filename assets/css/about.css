@@ -6,7 +6,38 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #222;
+    background-color: #111;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: none;
+}
+
+#header.scroll {
+    background-color: rgba(1, 1, 1, 0.5);
+}
+
+#header .logo span {
+    color: white;
+}
+
+#header .logo h1 {
+    color: red;
+}
+
+#header .avatar-icon{
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    border-radius: 4px;
+    object-fit: contain;
 }
 
 .poster {
@@ -48,22 +79,24 @@ body {
     color: #fff;
 }
 
-.diviser {
-    height: 20px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .8);
+.more-watched {
+    font-size: 40px;
 }
 
 .banner {
-    background-image: url("https://www.viagenscinematograficas.com.br/wp-content/uploads/2019/10/Projeto-Gemini-Filme-Locacoes-2.jpg");
+    background-image: url("https://img.ibxk.com.br/2019/11/12/12160400669238.jpg?w=1120&h=420&mode=crop&scale=both");
     background-size: cover;
     background-position: center center;
-    object-fit: contain;
+    object-fit: cover;
     color: #fff;
     height: 500px;
-    margin: 40px auto;
-    border: none;
-    
+    margin-top: 85px;
+}
+
+.banner-fadeBottom {
+    margin-top: -10px;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
 
 .content {
@@ -103,9 +136,3 @@ body {
     transition: all 0.5s;
 }
 
-.banner-fadeBottom {
-    border: none;
-    margin-top: -6px;
-    height: 7rem;
-    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
-}

@@ -25,7 +25,7 @@ inputs.forEach(input => {
 // Validando informações dentro do login
 
 function Validar(login, password) {
-    if(login == '' & password == ''){
+    if(login == '' && password == ''){
         alert('Preencha os campos!');
         return false
     } else if(login == '') {

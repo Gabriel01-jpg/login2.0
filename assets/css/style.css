@@ -232,7 +232,7 @@ a:hover{
     }
 }
 
-@media (min-width: 621px ) and (max-width: 1320px){
+@media (min-width: 621px ) and (max-width: 1366px){
 
     .content {
         padding: 20px 55px;

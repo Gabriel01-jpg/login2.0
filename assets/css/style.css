@@ -20,8 +20,13 @@
     --background-color: hsl(var(--hue) 55% 69%)
 }  
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--body-font);
+    background-color: #222;
 }
 
 form {
@@ -35,14 +40,7 @@ form h2 {
     margin: 15px 0;
 }
 
-.background {
-    position: fixed;
-    height: 100vh;
-    z-index: -1;
-    background-color: #222;
-    /* background-color: var(--background-color); */
-    width: 100vw;
-}
+
 
 .icon {
     display: flex;
@@ -183,4 +181,102 @@ a:hover{
 .btn:hover {
     background: var(--base-color-second);
 }
+
+@media (max-width: 620px){
+    .container {
+        padding: 5px;
+    }
+
+    .content {
+        padding: 10px 45px;
+    }
+
+    .input-div{
+        grid-template-columns: 7% 93%;
+        margin: 5px 0;
+        padding: 5px 0;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .avatar {
+        width: 50px;
+    }
+    
+    form h2 {
+        font-size: 35px;
+    }
+    
+    .input {
+        font-size: 0.8rem;
+    }
+
+    .login-container a {
+        font-size: .6rem;
+    }
+
+    .input-box h5 {
+        font-size: 0.8rem;
+    }
+    
+    .icon i {
+        font-size: 1rem;
+    }
+
+    .btn {
+        height: 37px;
+    }
+}
+
+@media (min-width: 621px ) and (max-width: 1320px){
+
+    .content {
+        padding: 20px 55px;
+    }
+
+    .input-div{
+        grid-template-columns: 7% 93%;
+        margin: 5px 0;
+        padding: 5px 0;
+    }
+
+    form {
+        display: grid;
+        justify-content: center;
+        width: 150%;
+    }
+
+    .avatar {
+        max-width: 70px;
+    }
+    
+    form h2 {
+        font-size: 45px;
+    }
+    
+    .input {
+        font-size: 1.2rem;
+    }
+
+    .input-box h5 {
+        font-size: 1rem;
+    }
+
+    .login-container a {
+        font-size: .9rem;
+    }
+    
+    .icon i {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        height: 37px;
+    }
+}
+
 

@@ -18,6 +18,7 @@ body {
     justify-content: space-between;
     padding: 15px;
     border: none;
+    z-index: 1;
 }
 
 #header.scroll {
@@ -134,5 +135,21 @@ body {
     background-color: #e6e6e6;
     color: #000;
     transition: all 0.5s;
+}
+
+
+
+footer {
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to bottom, #111, #222);
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h2 {
+    color: white;
 }
 
